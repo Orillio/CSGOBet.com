@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AspNet.Security.OpenId.Steam": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "JavaScriptEngineSwitcher.ChakraCore": {
               "target": "Package",
               "version": "[3.7.2, )"
@@ -73,6 +77,10 @@
             "React.AspNet": {
               "target": "Package",
               "version": "[5.2.10, )"
+            },
+            "SteamWebAPI2": {
+              "target": "Package",
+              "version": "[4.2.5, )"
             }
           },
           "imports": [

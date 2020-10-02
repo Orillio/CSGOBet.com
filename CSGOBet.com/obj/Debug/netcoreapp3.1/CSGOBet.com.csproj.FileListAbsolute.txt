@@ -37,9 +37,13 @@ D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\bin\Debug\netcoreap
 D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\bin\Debug\netcoreapp3.1\CSGOBet.com.dll
 D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\bin\Debug\netcoreapp3.1\CSGOBet.com.pdb
 D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\bin\Debug\netcoreapp3.1\JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll
-D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\obj\Debug\netcoreapp3.1\CSGOBet.com.csproj.CoreCompileInputs.cache
-D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\obj\Debug\netcoreapp3.1\CSGOBet.com.MvcApplicationPartsAssemblyInfo.cs
-D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\obj\Debug\netcoreapp3.1\CSGOBet.com.MvcApplicationPartsAssemblyInfo.cache
 D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\obj\Debug\netcoreapp3.1\CSGOBet.com.dll
 D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\obj\Debug\netcoreapp3.1\CSGOBet.com.pdb
 D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\obj\Debug\netcoreapp3.1\CSGOBet.com.genruntimeconfig.cache
+D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\bin\Debug\netcoreapp3.1\AngleSharp.dll
+D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\bin\Debug\netcoreapp3.1\AspNet.Security.OpenId.dll
+D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\bin\Debug\netcoreapp3.1\AspNet.Security.OpenId.Steam.dll
+D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Yan\Desktop\С# и связанное\CSGOBet\CSGOBet.com\bin\Debug\netcoreapp3.1\System.Text.Json.dll
