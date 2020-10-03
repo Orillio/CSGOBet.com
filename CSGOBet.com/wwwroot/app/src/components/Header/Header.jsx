@@ -1,13 +1,13 @@
 import React from 'react';
 import LogoSide from './LogoSide/LogoSide';
-// import NavSide from './NavSide/NavSide';
+import NavSide from './NavSide/NavSide';
 
 const Header = () => {
     return (
-        <>
-        <LogoSide />
-        {/* <NavSide /> */}
-        </>
+       <div className="wrapperHeader">
+            <LogoSide />
+            <NavSide />
+       </div>
     );
 }
 

@@ -2,12 +2,13 @@ import React from 'react';
 import classes from './LogoSide.module.css';
 
 const LogoSide = (props) => {
+
     return (
         <div className={classes.wrapperLogoSide}>
             <div className={classes.logoSide}>
                 <span className={classes.logo}>LOGO</span>
                 <span className={classes.online}>
-                <span>Онлайн: {props.liveOnline}</span>
+                <span>Онлайн: </span>
                     <div className={classes.greenRound}></div>
                 </span>
             </div>
