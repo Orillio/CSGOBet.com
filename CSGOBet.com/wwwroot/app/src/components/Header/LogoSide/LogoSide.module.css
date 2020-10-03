@@ -25,6 +25,7 @@
 .wrapperLogoSide {
     display: flex;
     justify-content: space-between;
+    padding: 10px 0;
 }
 
 .signIn img:hover {
