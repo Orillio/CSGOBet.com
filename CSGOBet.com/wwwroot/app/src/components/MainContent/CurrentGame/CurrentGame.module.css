@@ -1,0 +1,10 @@
+.total {
+    font-size: 40px;
+    color: #3A3939;
+}
+
+.currentGameWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
