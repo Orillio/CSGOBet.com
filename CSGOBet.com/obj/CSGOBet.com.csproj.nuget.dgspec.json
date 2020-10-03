@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\programming\\lala\\CSGOBet.com\\CSGOBet.com\\CSGOBet.com.csproj": {}
+    "D:\\Yan\\Desktop\\С# и связанное\\CSGOBet.com\\CSGOBet.com\\CSGOBet.com.csproj": {}
   },
   "projects": {
-    "C:\\programming\\lala\\CSGOBet.com\\CSGOBet.com\\CSGOBet.com.csproj": {
+    "D:\\Yan\\Desktop\\С# и связанное\\CSGOBet.com\\CSGOBet.com\\CSGOBet.com.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\programming\\lala\\CSGOBet.com\\CSGOBet.com\\CSGOBet.com.csproj",
+        "projectUniqueName": "D:\\Yan\\Desktop\\С# и связанное\\CSGOBet.com\\CSGOBet.com\\CSGOBet.com.csproj",
         "projectName": "CSGOBet.com",
-        "projectPath": "C:\\programming\\lala\\CSGOBet.com\\CSGOBet.com\\CSGOBet.com.csproj",
-        "packagesPath": "C:\\Users\\krasn\\.nuget\\packages\\",
-        "outputPath": "C:\\programming\\lala\\CSGOBet.com\\CSGOBet.com\\obj\\",
+        "projectPath": "D:\\Yan\\Desktop\\С# и связанное\\CSGOBet.com\\CSGOBet.com\\CSGOBet.com.csproj",
+        "packagesPath": "C:\\Users\\Yan\\.nuget\\packages\\",
+        "outputPath": "D:\\Yan\\Desktop\\С# и связанное\\CSGOBet.com\\CSGOBet.com\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\krasn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

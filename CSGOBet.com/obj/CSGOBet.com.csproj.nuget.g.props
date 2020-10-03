@@ -5,13 +5,10 @@
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\krasn\.nuget\packages\</NuGetPackageFolders>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\Yan\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.7.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.6.0</NuGetToolVersion>
   </PropertyGroup>
-  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="$([MSBuild]::EnsureTrailingSlash($(NuGetPackageFolders)))" />
-  </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
@@ -22,9 +19,9 @@
     <Import Project="$(NuGetPackageRoot)javascriptengineswitcher.chakracore.native.win-arm\3.7.2\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-arm.props" Condition="Exists('$(NuGetPackageRoot)javascriptengineswitcher.chakracore.native.win-arm\3.7.2\build\JavaScriptEngineSwitcher.ChakraCore.Native.win-arm.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x86 Condition=" '$(PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x86)' == '' ">C:\Users\krasn\.nuget\packages\javascriptengineswitcher.chakracore.native.win-x86\3.7.2</PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x86>
-    <PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x64 Condition=" '$(PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x64)' == '' ">C:\Users\krasn\.nuget\packages\javascriptengineswitcher.chakracore.native.win-x64\3.7.2</PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x64>
-    <PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm64 Condition=" '$(PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm64)' == '' ">C:\Users\krasn\.nuget\packages\javascriptengineswitcher.chakracore.native.win-arm64\3.7.2</PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm64>
-    <PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm Condition=" '$(PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm)' == '' ">C:\Users\krasn\.nuget\packages\javascriptengineswitcher.chakracore.native.win-arm\3.7.2</PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm>
+    <PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x86 Condition=" '$(PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x86)' == '' ">C:\Users\Yan\.nuget\packages\javascriptengineswitcher.chakracore.native.win-x86\3.7.2</PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x86>
+    <PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x64 Condition=" '$(PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x64)' == '' ">C:\Users\Yan\.nuget\packages\javascriptengineswitcher.chakracore.native.win-x64\3.7.2</PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-x64>
+    <PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm64 Condition=" '$(PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm64)' == '' ">C:\Users\Yan\.nuget\packages\javascriptengineswitcher.chakracore.native.win-arm64\3.7.2</PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm64>
+    <PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm Condition=" '$(PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm)' == '' ">C:\Users\Yan\.nuget\packages\javascriptengineswitcher.chakracore.native.win-arm\3.7.2</PkgJavaScriptEngineSwitcher_ChakraCore_Native_win-arm>
   </PropertyGroup>
 </Project>
