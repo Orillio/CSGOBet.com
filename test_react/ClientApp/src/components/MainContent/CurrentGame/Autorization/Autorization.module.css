@@ -1,3 +1,6 @@
 .btn {
     cursor: pointer;
 }
+.link{
+    display: block;
+}

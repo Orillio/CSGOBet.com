@@ -4,7 +4,9 @@ import autoriz from './images/sign.png';
 
 const Autorization = () => {
     return (
-        <img src={autoriz} alt="autorization" className={classes.btn}/>
+        <a href="/login" className={classes.link}>
+            <img type="submit" src={autoriz} alt="autorization" className={classes.btn}/>
+        </a>
     );
 }
 

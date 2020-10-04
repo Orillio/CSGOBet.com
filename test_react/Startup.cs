@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using AspNet.Security.OpenId.Steam;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace CSGOBet
 {
@@ -22,30 +24,39 @@ namespace CSGOBet
             {
                 configuration.RootPath = "ClientApp/build";
             });
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            })
+            .AddCookie(options =>
+            {
+                options.LoginPath = "/login";
+                options.LogoutPath = "/signout";
+            })
+            .AddSteam();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
 
             app.UseRouting();
 
+            app.UseAuthentication();
+            app.UseAuthorization();
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute("default", 
+                    "{controller=Authentication}/login");
+                endpoints.MapControllerRoute(null,
+                    "{controller=Authentication}/isAuth", new { action = "IsAuthenticated" });
             });
 
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = "ClientApp";
-
-                if (env.IsDevelopment())
-                {
-                    spa.UseReactDevelopmentServer(npmScript: "start");
-                }
+                spa.UseReactDevelopmentServer(npmScript: "start");
             });
         }
     }
