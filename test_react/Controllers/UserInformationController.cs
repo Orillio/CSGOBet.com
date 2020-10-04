@@ -27,7 +27,9 @@ namespace CSGOBet.Controllers
         [Route("api/userInfo/summary")]
         public async Task<PlayerSummaryModel> GetPlayerSummary()
         {
-            var e = await steamApi.GetInterface<SteamUser>().GetPlayerSummaryAsync(HttpContext.GetSteamId());
+            var steamId = HttpContext.GetSteamId();
+            if (steamId == null) return null;
+            var e = await steamApi.GetInterface<SteamUser>().GetPlayerSummaryAsync((ulong)HttpContext.GetSteamId());
             return e.Data;
         }
     }
