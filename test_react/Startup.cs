@@ -8,6 +8,9 @@ using Microsoft.Extensions.Hosting;
 using AspNet.Security.OpenId.Steam;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using CSGOBet.Middlewares;
+using Microsoft.EntityFrameworkCore.SqlServer;
+using Microsoft.EntityFrameworkCore;
+using CSGOBet.Models.Context;
 
 namespace CSGOBet
 {
@@ -26,6 +29,7 @@ namespace CSGOBet
             {
                 configuration.RootPath = "ClientApp/build";
             });
+            services.AddDbContext<DBContext>(options => options.UseSqlServer(Configuration["Data:DBContext:ConnectionString"]));
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;

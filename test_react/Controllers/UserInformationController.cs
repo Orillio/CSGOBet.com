@@ -29,7 +29,7 @@ namespace CSGOBet.Controllers
         {
             var steamId = HttpContext.GetSteamId();
             if (steamId == null) return null;
-            var e = await steamApi.GetInterface<SteamUser>().GetPlayerSummaryAsync((ulong)HttpContext.GetSteamId());
+            var e = await steamApi.GetInterface<SteamUser>().GetPlayerSummaryAsync((ulong)steamId);
             return e.Data;
         }
     }
