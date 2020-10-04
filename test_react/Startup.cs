@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using AspNet.Security.OpenId.Steam;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using CSGOBet.Middlewares;
 
 namespace CSGOBet
 {
@@ -20,6 +21,7 @@ namespace CSGOBet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<SteamApiMW>();
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/build";
@@ -44,7 +46,7 @@ namespace CSGOBet
 
             app.UseAuthentication();
             app.UseAuthorization();
-
+            app.UseDeveloperExceptionPage();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute("default", 

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authentication;
+using CSGOBet.Extensions;
 
 namespace CSGOBet.Controllers
 {
@@ -14,11 +15,6 @@ namespace CSGOBet.Controllers
         public IActionResult Login()
         {
             return Challenge(new AuthenticationProperties() { RedirectUri = "/" }, "Steam");
-        }
-        [HttpGet("/getAuthKey")]
-        public string GetAuthenticationKeyClaim()
-        {
-            return HttpContext.User.Claims.ToList()[0].Value;
         }
     }
 }
