@@ -9,12 +9,18 @@ using CSGOBet.Extensions;
 
 namespace CSGOBet.Controllers
 {
+    [ApiController]
     public class AuthenticationController : Controller
     {
         [HttpGet("/login")]
         public IActionResult Login()
         {
             return Challenge(new AuthenticationProperties() { RedirectUri = "/" }, "Steam");
+        }
+        [HttpGet("api/auth/isAuth")]
+        public bool IsAuthenticated()
+        {
+            return HttpContext.User.Identity.IsAuthenticated;
         }
     }
 }
