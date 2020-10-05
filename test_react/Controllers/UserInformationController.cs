@@ -32,7 +32,7 @@ namespace CSGOBet.Controllers
             var e = await steamApi.GetInterface<SteamUser>().GetPlayerSummaryAsync((ulong)steamId);
             return e.Data;
         }
-        [Route("authApi/api/userInfo/getInventory")]
+        [Route("authApi/userInfo/getInventory")]
         public async Task<string> GetUserInventory()
         {
             var steamId = HttpContext.GetSteamId();
