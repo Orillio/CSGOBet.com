@@ -20,9 +20,17 @@ namespace CSGOBet.Middlewares
         }
         public async Task InvokeAsync(HttpContext context)
         {
-            if (context.User.Identity.IsAuthenticated) await next(context);
+            if (context.User.Identity.IsAuthenticated)
+            {
+                await next(context);
+                return;
+            }
             var q = context.Request.Path.Value;
-            if (!q.StartsWith("/authApi")) await next(context);
+            if (!q.StartsWith("/authApi"))
+            {
+                await next(context);
+                return;
+            }
             else context.Response.StatusCode = 403;
         }
     }
