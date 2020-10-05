@@ -8,7 +8,8 @@ namespace CSGOBet.Models.UserModels
     public class User
     {
         public int SteamId { get; set; }
-        public Inventory AppInventory { get; set; }
+        public List<ulong> InventoryItemIds { get; set; }
         public uint Balance { get; set; }
+        public string TradeOfferUrl { get; set; }
     }
 }

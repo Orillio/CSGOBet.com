@@ -10,9 +10,7 @@ namespace CSGOBet.Extensions
     {
         public static ulong? GetSteamId(this HttpContext context)
         {
-            if (!context.User.Identity.IsAuthenticated) return null;
             return ulong.Parse(context.User.Claims.ToList()[0].Value.Split("/")[5]);
-
         }
     }
 }
