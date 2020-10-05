@@ -11,6 +11,7 @@ using CSGOBet.Middlewares;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.EntityFrameworkCore;
 using CSGOBet.Models.Context;
+using Microsoft.AspNetCore.Http;
 
 namespace CSGOBet
 {
@@ -24,7 +25,8 @@ namespace CSGOBet
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddScoped<SteamApiMW>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped<SteamApiService>();
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/build";
@@ -45,11 +47,11 @@ namespace CSGOBet
         {
             app.UseStaticFiles();
             app.UseSpaStaticFiles();
-
             app.UseRouting();
 
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseMiddleware<ApiRestricted>();
             app.UseDeveloperExceptionPage();
             app.UseEndpoints(endpoints =>
             {

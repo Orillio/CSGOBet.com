@@ -17,7 +17,7 @@ namespace CSGOBet.Controllers
         {
             return Challenge(new AuthenticationProperties() { RedirectUri = "/" }, "Steam");
         }
-        [HttpGet("api/auth/isAuth")]
+        [HttpGet("api/isAuth")]
         public bool IsAuthenticated()
         {
             return HttpContext.User.Identity.IsAuthenticated;
