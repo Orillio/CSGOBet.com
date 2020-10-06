@@ -17,15 +17,15 @@ namespace CSGOBet.Controllers
         {
             steamApi = api;
         }
-        [Route("authApi/itemsService/getItemInfoByClassId")]
+        [Route("authApi/itemsService/getItemInfo")]
         public async Task<AssetClassInfoResultModel> GetInventoryItemInfo(ulong classId)
         {
             var info = await steamApi.GetInterface<SteamEconomy>()
                 .GetAssetClassInfoAsync(730, new List<ulong> { classId }, language: "ru");
             return info.Data;
         }
-        [Route("authApi/itemsService/getItemInfoByClassId/multiple")]
-        public async Task<AssetClassInfoResultModel> GetInventoryItemInfo(string data)
+        [Route("authApi/itemsService/getItemsInfo")]
+        public async Task<AssetClassInfoResultModel> GetInventoryItemsInfo(string data)
         {
             var jobject = JObject.Parse(data);
             var children = jobject.Children().Children().Children();
