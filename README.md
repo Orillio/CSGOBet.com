@@ -23,6 +23,6 @@ url - ``/authApi/userInfo/getInventory``
 **Метод** GetInventoryItemsInfo - этот метод похож на предыдущий, но он возвращает несколько предметов по classId. **Внимание** На вход принимается уже не classId, а data, что является json строкой. url - ``/authApi/itemsService/getItemsInfo``
 
 ### Пример запроса, который должен приходить на сервер
-![](https://image.prntscr.com/image/lJ0beqZWToeZofEVVTkRkw.png)
+![](https://image.prntscr.com/image/3yR1qILbRKKbMuUrgWzG7w.png)
 #### Где classId1, classId2, classId3 - это предметы, информацию о которых хочешь получить.
 ***
